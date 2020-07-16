@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notas</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/estilo3.css" />
+    <script src="script3.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Colégio Fictício</h1>
+
+      <img
+        src="style/escola.png"
+        alt="imagem preto e branco de uma fachada de escola"
+      />
+    </header>
+
+    <h1>Notas Turma X</h1>
+    <table>
+      <tr>
+        <th>Aluno</th>
+        <th>Nota 1° bimestre</th>
+        <th>Nota 2° bimestre</th>
+        <th>Nota 3° bimestre</th>
+        <th>Nota 4° bimestre</th>
+        <th colspan="2">Média</th>
+      </tr>
+      <tr>
+        <td><input id="nomeAluno" type="text" /></td>
+        <td><input id="nota1" type="number" /></td>
+        <td><input id="nota2" type="number" /></td>
+        <td><input id="nota3" type="number" /></td>
+        <td><input id="nota4" type="number" /></td>
+        <td><input type="number" id="media" readonly /></td>
+        <td>
+          <input type="text" id="resultado" readonly placeholder="Resultado" />
+        </td>
+      </tr>
+    </table>
+    <button onclick="calc_media()">Registrar</button>
+
+    <script src="script4.js"></script>
+  </body>
+</html>
